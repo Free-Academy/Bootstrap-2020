@@ -1,0 +1,12 @@
+.table-panel table {
+    border: 0px;
+    border-spacing: 1px 1px;
+    background: #ff9b21;
+    width: 1000px;
+    margin: auto;
+}
+
+.table-panel table tr td {
+    padding: 0px;
+    background: white;
+}

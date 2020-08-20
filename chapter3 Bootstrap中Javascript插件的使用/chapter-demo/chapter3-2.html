@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>chapter3-2</title>
+
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap-theme.css" >
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.css" >
+
+    <style type="text/css">
+        /*div[name="top-grid-panel"], div[name="top-grid-panel"] > div {*/
+        /*    border: 1px solid #000bff;*/
+        /*}*/
+        .row, .row > div {
+            border: 1px solid blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Modal框（modal.js）</h1>
+    <div>
+        <button id="btn1" type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#myModal-sm">
+            加载窗口(modal-sm)
+        </button>
+        <div class="modal fade" id="myModal-sm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        弹框内容
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#myModal">
+            加载窗口(modal)
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        弹框内容
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#myModal-lg">
+            加载窗口(modal-lg)
+        </button>
+        <div class="modal fade" id="myModal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        弹框内容
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target=".grid-eg-modal">
+            Modal中使用栅格布局
+        </button>
+        <div class="modal fade grid-eg-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">栅格布局modal框</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" name="top-grid-panel">
+                            <div class="col-md-1">1</div>
+                            <div class="col-md-1">2</div>
+                            <div class="col-md-1">3</div>
+                            <div class="col-md-1">4</div>
+                            <div class="col-md-1">5</div>
+                            <div class="col-md-1">6</div>
+                            <div class="col-md-1">7</div>
+                            <div class="col-md-1">8</div>
+                            <div class="col-md-1">9</div>
+                            <div class="col-md-1">10</div>
+                            <div class="col-md-1">11</div>
+                            <div class="col-md-1">12</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">.col-md-4</div>
+                            <div class="col-md-5 col-md-offset-3">.col-md-offset-3 .col-md-5</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+                        <button type="button" class="btn btn-primary">保 存</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-product-specs-modal">添加商品规格</button>
+        <div class="modal fade" id="add-product-specs-modal" tabindex="-1" role="dialog" aria-labelledby="add-product-specs-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">添加商品规格</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="specs-name" class="control-label">规格名称：</label>
+                                <input type="text" class="form-control" id="specs-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="control-label">规格属性：</label>
+                                <textarea class="form-control" id="specs-attr"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+                        <button id="submit-specs" type="button" class="btn btn-primary">提 交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>标签页（tab.js）</h1>
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">Home</div>
+            <div role="tabpanel" class="tab-pane" id="profile">Profile</div>
+            <div role="tabpanel" class="tab-pane" id="messages">Messages</div>
+            <div role="tabpanel" class="tab-pane" id="settings">Settings</div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+<script src="../../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //jQuery实现
+        $("#submit-specs").click(function () {
+            let specsName = $("#specs-name").val();
+            let specsAttr = $("#specs-attr").val();
+            console.log(specsName);
+            console.log(specsAttr);
+            $("#add-product-specs-modal").modal('hide');
+        });
+        //bootstrap 监听事件实现
+        // $("#add-product-specs-modal").on('hide.bs.modal',function (e) {
+        //     let specsName = $("#specs-name").val();
+        //     let specsAttr = $("#specs-attr").val();
+        //     console.log(specsName);
+        //     console.log(specsAttr);
+        // });
+    });
+</script>
+</body>
+</html>
